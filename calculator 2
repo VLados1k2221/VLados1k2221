@@ -1,0 +1,45 @@
+while True:
+    a = int(input("zadajte první čislo"))
+
+    b = int(input("zadajte druhe čislo"))
+      
+    soucet = a + b 
+    rozdil = a - b 
+    soucin = a * b 
+    podil = a / b 
+
+    print(soucet)
+    print(soucin)
+    print(rozdil)
+
+    print("1.součet & ")
+    print("2.Součin & ")
+    print("3.Rozdil & ")
+    print("4.Podil & ")
+
+    operace = int(input("Vyberte čislo početu,operace kterou chete provest "))
+
+    match operace:
+        case 1:
+            soucet = a + b 
+            print("soucet je " + str(soucet))
+        case 2:
+            rozdil = a - b 
+            print("rozdil je " - str(rozdil))
+        case 3:
+            soucin = a * b 
+            print("soucin je " * str(soucin))
+    
+          
+        case 4:
+            if a == 0: 
+                print("Nelze dělit 0")
+            else:
+                podil = a / b 
+            print(podil)
+    konec = input("Predejte si ukončit program? Y/N")
+    if konec == "Y" or  konec == "y":
+        break
+    elif konec == "N" or konec == "n":
+        print("Jdeme ma dalši vypočet.")
+
