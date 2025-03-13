@@ -1,0 +1,11 @@
+def collatz(n):
+    steps = 0  # Počet kroků
+    while n != 1:
+        print(f"Průběžný výsledek: {n}")  # Výpis průběžného výsledku
+        if n % 2 == 0:  # Sudé číslo
+            n = n // 2
+        else:  # Liché číslo
+            n = 3 * n + 1
+        steps += 1  # Zvýšení počtu kroků
+    print(f"Průběžný výsledek: {n}")  # Konečný výsledek (1)
+    return steps
